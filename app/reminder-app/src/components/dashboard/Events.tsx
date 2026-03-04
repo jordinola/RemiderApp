@@ -16,6 +16,7 @@ const Events = () => {
       Description: "test",
       StartDate: new Date(),
       EndDate: new Date(),
+      CreatedAt: new Date(),
     },
   ];
 

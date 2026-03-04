@@ -14,6 +14,7 @@ const Reminders = () => {
       Description: "test",
       AlertAt: undefined,
       IsCompleted: false,
+      CreatedAt: new Date(),
     },
   ];
 
