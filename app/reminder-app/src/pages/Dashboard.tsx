@@ -1,15 +1,23 @@
-import { useTheme } from "../contexts/ThemeContext";
+import Events from "../components/dashboard/Events";
+import Reminders from "../components/dashboard/Reminders";
 
 const Dashboard = () => {
-  const { theme, toggleTheme } = useTheme();
+  // const { theme, toggleTheme } = useTheme();
 
   return (
-    <>
-      Dashboard
-      <button onClick={toggleTheme}>
+    <div className="px-10 py-5">
+      <h1 className="py-5">Don't Forget!!!</h1>
+
+      <div className="grid grid-cols-2 gap-4">
+        <Reminders />
+
+        <Events />
+      </div>
+
+      {/* <button onClick={toggleTheme}>
         {theme === "light" ? "Dark" : "Light"} Mode
-      </button>
-    </>
+      </button> */}
+    </div>
   );
 };
 
