@@ -1,8 +1,12 @@
 import Events from "../components/dashboard/Events";
 import Reminders from "../components/dashboard/Reminders";
+import Modal from "../components/ui/Modal";
+import { useModalContext } from "../contexts/ModalContext";
 
 const Dashboard = () => {
   // const { theme, toggleTheme } = useTheme();
+
+  const { isOpen } = useModalContext();
 
   return (
     <div className="px-10 py-5">
@@ -13,6 +17,8 @@ const Dashboard = () => {
 
         <Events />
       </div>
+
+      {isOpen && <Modal />}
 
       {/* <button onClick={toggleTheme}>
         {theme === "light" ? "Dark" : "Light"} Mode

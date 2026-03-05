@@ -1,3 +1,4 @@
+import { Eye, Plus } from "lucide-react";
 import type { EventTable } from "../../types/DashboardTypes";
 import Table, { type Column } from "../ui/Table";
 
@@ -21,8 +22,14 @@ const Events = () => {
   ];
 
   return (
-    <div className="w-full rounded-lg bg-white">
-      <Table data={data} columns={eventColumns} rowKey="Id" />
+    <div className="flex flex-col items-end gap-4">
+      <div className="flex gap-3">
+        <Eye className="hover:cursor-pointer" />
+        <Plus className="hover:cursor-pointer" />
+      </div>
+      <div className="w-full rounded-lg bg-white">
+        <Table data={data} columns={eventColumns} rowKey="Id" />
+      </div>
     </div>
   );
 };
