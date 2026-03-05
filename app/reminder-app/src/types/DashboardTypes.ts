@@ -1,15 +1,15 @@
-type BaseTable = {
+type Base = {
   Id: string;
   CreatedAt: Date;
 };
 
-export type ReminderTable = BaseTable & {
+export type Reminder = Base & {
   Description: string;
   IsCompleted: boolean;
   AlertAt?: Date | null;
 };
 
-export type EventTable = BaseTable & {
+export type Event = Base & {
   Title: string;
   Description: string;
   StartDate: Date;

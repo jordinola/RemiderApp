@@ -1,16 +1,16 @@
 import { Eye, Plus } from "lucide-react";
-import type { EventTable } from "../../types/DashboardTypes";
+import type { Event } from "../../types/DashboardTypes";
 import Table, { type Column } from "../ui/Table";
 
 const Events = () => {
-  const eventColumns: Column<EventTable>[] = [
+  const eventColumns: Column<Event>[] = [
     { key: "Title", label: "Title" },
     { key: "Description", label: "Description" },
     { key: "StartDate", label: "Start Date" },
     { key: "EndDate", label: "End Date" },
   ];
 
-  const data: EventTable[] = [
+  const data: Event[] = [
     {
       Id: "1",
       Title: "title",

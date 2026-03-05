@@ -10,7 +10,7 @@ const Dashboard = () => {
 
   return (
     <div className="px-10 py-5">
-      <h1 className="py-5">Don't Forget!!!</h1>
+      <h1 className="text-4xl font-bold py-5">Don't Forget!!!</h1>
 
       <div className="grid grid-cols-2 gap-4">
         <Reminders />
